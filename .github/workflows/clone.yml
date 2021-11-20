@@ -22,4 +22,5 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
               ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+              cd ../pub/
               git clone git@github.com:emson5644/emson5644.github.io.git
